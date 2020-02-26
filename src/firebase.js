@@ -13,4 +13,6 @@ firebase.initializeApp ({
     appId: "1:641952554912:web:2ccffd0d20445b8ed38ec5",
     measurementId: "G-65GX98F9T6"
   })
-  
+
+  let data = firebase.firestore();
+  export default data
