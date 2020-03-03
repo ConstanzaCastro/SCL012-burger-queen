@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../App.css';
 import "firebase/auth";
-/*import { useFirebaseApp, useUser } from "reactfire";*/
+import { useFirebaseApp, useUser } from "reactfire";
 
 export default (props) => {
     const [ email, setEmail ] = useState("");
@@ -22,9 +22,9 @@ export default (props) => {
     
     const logOut= () => {
         firebase.auth().signOut().then(function() {
-            // Sign-out successful.
+            // Sign-out successful, you are out.
           }).catch(function(error) {
-            // An error happened.
+            // Something happen. An error happened.
           });
     }
 
