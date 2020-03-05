@@ -1,25 +1,26 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter as Router, Route} from "react-router-dom";
+//import login from './assets/components/login';
+import Init from './mainPage';
+import Login from './assets/components/login';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-           <code>Vurger Kuin</code> 
-        </p>
-        <a
-          className="App-link"
-          /*href="https://reactjs.org"*/
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Log In
-        </a>
-      </header>
+   
+ <div>
+      
+      <Router>
+      <img src={logo}></img>
+      <Route exact path="/jsh" component={ Init } />
+      <Route path="/" component={Login} />
+    </Router>
     </div>
+   
+
   );
 }
 
