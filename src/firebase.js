@@ -25,4 +25,4 @@ firebase.initializeApp({
   measurementId: "G-65GX98F9T6"
 });
 
-export let data = firebase.firestore();
+export let db = firebase.firestore();

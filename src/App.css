@@ -1,5 +1,22 @@
+.container {
+  background-color: #F0005D;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 10px 1.5em;
+  margin: 100px;
+  height: 100vh;
+}
+
+.root {
+  background-color: #F0005D;
+}
 .App {
   text-align: center;
+  background-color: #F0005D;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .App-logo {
@@ -22,7 +39,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #F0005D;
 }
 
 .App-link {

@@ -14,9 +14,9 @@ function App() {
  <div>
       
       <Router>
-      <img src={logo}></img>
+      <alt src={logo}/>
       <Route exact path="/jsh" component={ Init } />
-      <Route path="/" component={Login} />
+      <Route path="/" component={ Login } />
     </Router>
     </div>
    

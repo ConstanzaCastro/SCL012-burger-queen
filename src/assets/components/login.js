@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import '../../App.css';
 import "firebase/auth";
+import Navigation from'./nav';
 import { useFirebaseApp, useUser } from "reactfire";
 
- const Login = (props) => {
+export default (props) => {
     const [ email, setEmail ] = useState("");
     const [ password, setPassword] = useState("");
 
@@ -20,34 +20,38 @@ import { useFirebaseApp, useUser } from "reactfire";
         });   
     }
     
-    /*const logOut= () => {
+    const logOut= () => {
         firebase.auth().signOut().then(function() {
-            // Sign-out successful, you are out.
+            // Sign-out successful.
           }).catch(function(error) {
-            // Something happen. An error happened.
+            // An error happened.
           });
-    }*/
+    }
 
     return (
         <div>
             {
                 !user && 
 
-            <div className="navbar-login">
+            <div className="appLogin">
             <label htmlFor="email">Correo</label>
             <input type="email" id="email" onChange={ (event) => setEmail(event.target.value)}/>
             <label htmlFor="password">Contraseña</label>
             <input type="password" id="password" onChange={ (event) => setPassword(event.target.value)}/> 
-            <button onClick={login}>Iniciar Sesión </button>
+            <button onClick={login}>Iniciar Sesion </button>
+            <div className="container">
+                 <button>Mesas</button>
+                 <button>Cocina</button>
             </div>
+            </div>
+            
             }
-            { /* user &&
+            {  user &&
                 <React.Fragment>
-                <Navigation/><button id="btn-logOut" onClick={logOut}>Cerrar sesión</button>
+                <Navigation/><button onClick={logOut}>Cerrar sesion</button>
                 </React.Fragment>
-            */}
+            }
         </div>
     )
     
 }
-export default Login 
