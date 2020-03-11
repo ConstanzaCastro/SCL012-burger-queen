@@ -1,27 +1,37 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
-import { BrowserRouter as Router, Route} from "react-router-dom";
-//import login from './assets/components/login';
-import Init from './mainPage';
-import Login from './assets/components/login';
+import ButtonGeneric from '../src/assets/components/button';
+import Kitchen from './assets/components/kitchen';
+import Waiter from './assets/components/waiter';
+
+import { BrowserRouter as Router,Route ,Link } from "react-router-dom";
+
+class App extends Component{
+    
+  render(){
+    
+  return <Router> 
+    <div className="App">
+  
+      <header className="header">
+          <Link to="/"><ButtonGeneric name ="Mesas"/></Link>
+        
+          <Link to="/cocina"><ButtonGeneric name ="Cocina"/></Link>
 
 
+      </header>
+   <Route exact path="/" component={Waiter} />      
+   <Route exact path="/Cocina" component={Kitchen} />
+  
+ 
+  
+  </div>
+  
+  </Router>
+  }
 
-function App() {
-  return (
-   
- <div>
-      
-      <Router>
-      <alt src={logo}/>
-      <Route exact path="/jsh" component={ Init } />
-      <Route path="/" component={ Login } />
-    </Router>
-    </div>
-   
-
-  );
 }
+
+
 
 export default App;

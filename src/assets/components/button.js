@@ -1,9 +1,8 @@
-import React, { Component } from 'react';
-import './index.css';
-import Button from '@material-ui/core/Button';
-
-
-class ButtonGeneric extends Component{
+import React, { Component } from 'react'
+import Button from '@material-ui/core/Button'
+import { withStyles } from '@material-ui/core/styles'
+  
+  class ButtonGeneric extends Component{
     
     render(){
       const { classes } = this.props;
@@ -12,3 +11,12 @@ class ButtonGeneric extends Component{
       </div>
     }
   }
+ 
+  export default withStyles({
+    active:{
+      color: '#FFFFFF',
+      backgroundColor: '#FFA800',
+      margin: '20px 10px',
+      fontWeight: 'bold'
+    }
+  }) (ButtonGeneric)

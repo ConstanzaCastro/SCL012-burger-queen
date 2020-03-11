@@ -12,7 +12,8 @@ const Init=()=> {
         <p>
            <code>Vurger Kuin</code> 
         </p>
-        <Link to="assets/components/login.js">Log In</Link>
+        <Link to="assets/components/waiter.js">Mesas</Link>
+        <Link to="assets/components/kitchen.js">Cocina</Link>
       </header>
     </div>
     
