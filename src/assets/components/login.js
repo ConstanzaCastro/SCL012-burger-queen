@@ -38,7 +38,7 @@ import { useFirebaseApp, useUser } from "reactfire";
             <input type="email" id="email" onChange={ (event) => setEmail(event.target.value)}/>
             <label htmlFor="password">Contraseña</label>
             <input type="password" id="password" onChange={ (event) => setPassword(event.target.value)}/> 
-            <button onClick={login}>Iniciar Sesion </button>
+            <button onClick={login}>Iniciar Sesión </button>
             </div>
             }
             { /* user &&
