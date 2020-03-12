@@ -1,37 +1,22 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
-import ButtonGeneric from '../src/assets/components/button';
+import Init from './mainPage';
+import Lunch from './assets/components/Lunch';
+import Breakfast from './assets/components/breakfast';
+import {BrowserRouter as Router, Route} from 'react-router-dom';
 import Kitchen from './assets/components/kitchen';
-import Waiter from './assets/components/waiter';
-
-import { BrowserRouter as Router,Route ,Link } from "react-router-dom";
-
-class App extends Component{
-    
-  render(){
-    
-  return <Router> 
-    <div className="App">
-  
-      <header className="header">
-          <Link to="/"><ButtonGeneric name ="Mesas"/></Link>
-        
-          <Link to="/cocina"><ButtonGeneric name ="Cocina"/></Link>
 
 
-      </header>
-   <Route exact path="/" component={Waiter} />      
-   <Route exact path="/Cocina" component={Kitchen} />
-  
- 
-  
-  </div>
-  
-  </Router>
-  }
 
+function App() {
+  return (
+    <Router>
+      <Route exact path="/" component={ Init } />
+        <Route path="/Lunch" component={ Lunch } />
+        <Route path="/Breakfast" component={ Breakfast } />
+        <Route path="/Kitchen" component={ Kitchen } />    
+    </Router>
+  );
 }
-
-
 
 export default App;

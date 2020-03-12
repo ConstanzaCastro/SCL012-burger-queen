@@ -1,6 +1,6 @@
-import React, { Component } from 'react'
-import Button from '@material-ui/core/Button'
-import { withStyles } from '@material-ui/core/styles'
+import React, { Component } from 'react';
+import Button from '@material-ui/core/Button';
+import { withStyles } from '@material-ui/core/styles';
   
   class ButtonGeneric extends Component{
     
@@ -15,7 +15,7 @@ import { withStyles } from '@material-ui/core/styles'
   export default withStyles({
     active:{
       color: '#FFFFFF',
-      backgroundColor: '#FFA800',
+      backgroundColor: '#00DF61',
       margin: '20px 10px',
       fontWeight: 'bold'
     }
