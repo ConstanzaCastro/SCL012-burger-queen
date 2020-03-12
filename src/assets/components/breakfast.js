@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import Menu from "../components/Menu";
 import data from "../../data.json";
-import Logo from "../components/Logo";
+import Logo from "../image/vurgerkuin.png";
 import Navigation from "../components/Navigation";
 import InputClient from "../components/InputClient";
 import "../../index.css";
-import db from '../../firebase';
+import db from "../../firebase";
 
 
 

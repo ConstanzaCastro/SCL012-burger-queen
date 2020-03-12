@@ -1,5 +1,5 @@
-import React, {Component} from 'react';
-import logo from '../imge/vurgerkuin.png'
+import React, {Component} from "react";
+import logo from "../image/vurgerkuin.png";
 import { Link } from "react-router-dom";
 
 

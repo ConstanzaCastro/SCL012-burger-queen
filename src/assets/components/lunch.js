@@ -1,3 +1,3 @@
 import React, { Component } from 'react'
-import db from '../config';
+import db from '../firebase';
 

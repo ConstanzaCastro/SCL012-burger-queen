@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Init from './mainPage';
-import Lunch from './assets/components/Lunch';
+import Lunch from './assets/components/lunch';
 import Breakfast from './assets/components/breakfast';
 import {BrowserRouter as Router, Route} from 'react-router-dom';
 import Kitchen from './assets/components/kitchen';
