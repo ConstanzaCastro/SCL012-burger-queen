@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from "../image/vurgerkuin.png";
+import logo from "./assets/image/vurgerkuin.png";
 import './App.css';
 import { Link } from "react-router-dom";
 
