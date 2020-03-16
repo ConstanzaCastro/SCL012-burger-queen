@@ -29,3 +29,13 @@ class Lunch extends Component{
         });
        }
 
+       removeItem = (index, e) => {
+        let itemDelete = this.state.orders;
+        
+        this.setState({
+          orders: itemDelete.filter((itemDelete, i) => {
+            return i !== index
+          }),
+        })
+
+        
