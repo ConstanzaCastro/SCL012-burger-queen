@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import db from '../firebase';
 import data from "../../data.json";
 import InputClient from "../components/InputClient";
