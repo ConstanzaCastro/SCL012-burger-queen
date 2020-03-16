@@ -128,7 +128,7 @@ class Breakfast extends Component {
         <div className="nav-btn">
           <Navigation />
 
-          {this.state.products.map(e => (
+          {this.state.data.map(e => (
             <Menu clickItem={this.clickItem} key={e.id} infoproduct={e} />
           ))}
         </div>
