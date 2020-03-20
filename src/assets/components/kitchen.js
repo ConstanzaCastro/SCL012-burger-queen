@@ -4,6 +4,7 @@ import Order from "../components/order";
 import db from "../../firebaseInit";
 import Clock from "../components/Clock";
 import "../../index.css";
+import recoverOrder from "../components/recoverOrder";
 
 class Kitchen extends Component{
     constructor(){
