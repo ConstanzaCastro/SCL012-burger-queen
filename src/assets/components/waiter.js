@@ -1,26 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 
-class InputClient extends Component {
-
-    state = {
-        value:"", 
-    }
-
-    render () {
-        return (
-            <div className="input-client">
-            <p>Cliente</p>
-            <input onChange={e => this.setState({value: e.target.value})}
-            value={this.state.value} />
-            <br />
-            {this.state.value}
-            <br />
-            </div>
-        )
-    }
-}
-
 const Waiter = () => {
 
     return (
@@ -38,7 +18,7 @@ const Waiter = () => {
                     </li> 
                         <Link to="/">Volver</Link>
                 </ul>
-                </div>
+            </div>
             </div>    
       
     )
