@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Logo from "../components/Logo";
-import recoverOrder from "../data/recoverOrder";
-import ListOrder from "../components/ListOrder";
+import Order from "../components/order";
 import db from "../../firebaseInit";
 import Clock from "../components/Clock";
 import "../../index.css";
@@ -57,7 +56,7 @@ class Kitchen extends Component{
                  <h5>N° de Mesa: {e.mesa}</h5>
                     </div>
                     <div>
-                         <ListOrder Products={e.orden}/>
+                         <Order Products={e.orden}/>
                     </div>
                     <button value={e.id} onClick={this.orderReady}>Confirmar</button>
                 </div>
