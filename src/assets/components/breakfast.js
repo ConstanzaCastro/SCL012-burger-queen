@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import Menu from "../components/menu";
+import Menu from "./menu";
 import data from "../../data.json";
 import Logo from "../image/vurgerkuin.png";
-import Navigation from "../components/navigation";
-import InputClient from "../components/InputClient";
+import Navigation from "./navigation";
+import InputClient from "./InputClient";
 import "../../index.css";
 import db from "../../firebase";
 

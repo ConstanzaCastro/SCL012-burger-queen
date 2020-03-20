@@ -4,7 +4,7 @@ import Init from './mainPage';
 import Lunch from './assets/components/lunch';
 import Breakfast from './assets/components/breakfast';
 import {BrowserRouter as Router, Route} from 'react-router-dom';
-import Kitchen from './assets/components/kitchen';
+import Kitchen from './assets/views/kitchen';
 
 
 
