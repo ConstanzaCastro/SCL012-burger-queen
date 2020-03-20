@@ -1,4 +1,4 @@
-import db from '../../firebaseInit';
+import db from '../../firebase';
 
 const recoverOrder = (state) =>{
     return new Promise((resolve, reject)=>{

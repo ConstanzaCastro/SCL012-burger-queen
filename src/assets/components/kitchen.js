@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import Logo from "../components/Logo";
+import Logo from "../image/vurgerkuin.png";
 import Order from "../components/order";
-import db from "../../firebaseInit";
-import Clock from "../components/Clock";
+import db from "../../firebase";
+import Clock from "../components/clock";
 import "../../index.css";
 import recoverOrder from "../components/recoverOrder";
 
